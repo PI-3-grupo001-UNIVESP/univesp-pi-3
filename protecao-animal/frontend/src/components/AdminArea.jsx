@@ -79,7 +79,7 @@ export default function AdminArea() {
         style={{ marginBottom: "20px", marginLeft: "10px" }}
         onClick={exportarDados}
       >
-        📊 Exportar Dados (Excel)
+        Exportar Dados (Excel)
       </button>
 
       <div style={{ marginBottom: "30px" }}>
