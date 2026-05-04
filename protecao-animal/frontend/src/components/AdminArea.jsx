@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import CadastroAnimal from "./CadastroAnimal";
 import Adocao from "./Adocao";
 import Dashboard from "./Dashboard";
-import { supabase } from "../lib/supabase";
+import { supabase } from "../services/supabase";
 import * as XLSX from "xlsx";
 
 export default function AdminArea() {
@@ -25,7 +25,7 @@ export default function AdminArea() {
     window.location.reload();
   };
 
-  // 🔽 NOVA FUNÇÃO — EXPORTAR DADOS
+  //  NOVA FUNÇÃO — EXPORTAR DADOS
   const exportarDados = async () => {
     try {
       // buscar dados do supabase
@@ -64,7 +64,7 @@ export default function AdminArea() {
     <div className="container">
       <h2 className="titulo-pagina">Área do Administrador</h2>
 
-      {/* 🔴 LOGOUT */}
+      {/*  LOGOUT */}
       <button
         className="primary"
         style={{ marginBottom: "20px", background: "#c73d3d" }}
@@ -73,7 +73,7 @@ export default function AdminArea() {
         Sair
       </button>
 
-      {/* 🟢 NOVO BOTÃO EXPORTAR */}
+      {/*  NOVO BOTÃO EXPORTAR */}
       <button
         className="primary"
         style={{ marginBottom: "20px", marginLeft: "10px" }}
